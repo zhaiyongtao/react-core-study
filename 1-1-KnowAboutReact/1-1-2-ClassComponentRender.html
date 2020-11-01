@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用es6语法Class创建组件</title>
+</head>
+<body>
+<div class="app"></div>
+</body>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+<script type="text/babel">
+
+    class App extends React.Component {
+
+        constructor() {
+            super();
+            this.state = {
+                message : 'hello world'
+            }
+        }
+
+        changeContentFn () {
+            this.setState({
+                message: 'hello react!'
+            })
+        }
+        render() {
+            return (
+                <div>
+                    {this.state.message}
+                    {/*直接使用this，因为this指向undefined，所以会报错，所以需要使用bind给这个函数绑定this*/}
+                    <button onClick={this.changeContentFn.bind(this)}>点击改变内容</button>
+                </div>
+            );
+        }
+    }
+
+    ReactDOM.render(<App />
+        , document.getElementsByClassName('app')[0]);
+</script>
+</html>
