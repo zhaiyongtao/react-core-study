@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6语法中class的使用以及class中extends使用</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 原生js语法实现类的声明以及实例化
+    // function Person (name, age) {
+    //     console.info('function person',this)
+    //     this.name = name;
+    //     this.age = age;
+    // }
+    //
+    // Person.prototype.running = function () {
+    //     console.log(this);
+    //     console.log('person is running',this.age, this.name);
+    // }
+    //
+    // var p = new Person('zyt', 26);
+    // p.running();
+
+    // es6语法
+    class Person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        running() {
+            console.info(this.name, this.age, 'is running');
+        }
+        personMethod () {
+            console.info('personMethod')
+        }
+    }
+    const p = new Person('zyt', 26)
+    p.running()
+
+    // class 继承 extends
+
+    class Student extends Person {
+        constructor(stun, name, age) {
+            super(name, age);
+            this.stun = stun;
+        }
+
+        studentMethod () {
+            console.log('studentMethod',this.stun, this.name, this.age)
+            super.personMethod()
+        }
+
+        // 重写父类方法
+        running() {
+           console.log('students are running')
+        }
+    }
+
+    const s = new Student ('11342', 'zyt', 26);
+    s.studentMethod()
+    s.running()
+
+</script>
+
+</html>
