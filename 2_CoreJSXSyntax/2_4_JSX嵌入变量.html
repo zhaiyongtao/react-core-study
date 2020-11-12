@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsx嵌入变量</title>
+</head>
+<body>
+<div class="app"></div>
+</body>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+<script type="text/babel">
+
+    class App extends React.Component {
+
+        constructor() {
+            super();
+            this.state = {
+                name: "why",
+                age: 18,
+                hobbies: ["篮球", "唱跳", "rap"],
+
+                test1: null,
+                test2: undefined,
+                flag: false,
+
+                friend: {
+                    name: "kobe",
+                    age: 40
+                }
+            }
+        }
+
+        render() {
+            return (
+                <div>
+                    {/* 1.可以直接显示 */}
+                    <h2>{this.state.name}</h2>
+                    <h2>{this.state.age}</h2>
+                    <h2>{this.state.hobbies}</h2>
+
+
+                    {/* 2.不显示 */}
+                    <h2>{this.state.test1}</h2>
+                    <h2>{this.state.test1 + ""}</h2>
+                    <h2>{this.state.test2}</h2>
+                    <h2>{this.state.test2 + ""}</h2>
+                    <h2>{this.state.flag}</h2>
+                    <h2>{this.state.flag + ""}</h2>
+
+                    {/* 3.不显示 */}
+                    <h2>123{this.state.friend}</h2>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(<App/>
+        , document.getElementsByClassName('app')[0]);
+</script>
+</html>

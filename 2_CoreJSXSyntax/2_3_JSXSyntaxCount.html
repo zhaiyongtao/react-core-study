@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsx语法案例 计数器</title>
+</head>
+<body>
+<div class="app"></div>
+</body>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+<script type="text/babel">
+
+    class App extends React.Component {
+
+        constructor() {
+            super();
+            this.state = {
+                counter: 0,
+            }
+        }
+
+        render() {
+            return (
+                <div>
+                    <h2>当前计数：{this.state.counter}</h2>
+                    <button onClick={this.increment.bind(this)}> +1</button>
+                    <button onClick={this.decrement.bind(this)}> -1</button>
+                </div>
+            );
+        }
+
+        increment() {
+            this.setState({
+                counter: this.state.counter + 1
+            })
+        }
+
+        decrement() {
+            this.setState({
+                counter: this.state.counter - 1
+            })
+        }
+
+    }
+
+    ReactDOM.render(<App/>, document.getElementsByClassName('app')[0]);
+</script>
+</html>

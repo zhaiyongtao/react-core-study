@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSX嵌入属性</title>
+</head>
+<body>
+<div class="app"></div>
+</body>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+<script type="text/babel">
+
+    class App extends React.Component {
+
+        constructor() {
+            super();
+            this.state = {
+                title: "你好啊",
+                imgUrl: "https://upload.jianshu.io/users/upload_avatars/1102036/c3628b478f06.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240",
+                link: "https://www.baidu.com",
+                active: false
+            }
+        }
+
+        render() {
+            return (
+                <div>
+                    <h2 title={this.state.title}>
+                        Hello World!
+                    </h2>
+                    <img src={this.state.imgUrl} alt=""/>
+                    <a href={this.state.link} target="_blank">百度一下</a>
+                    <div className={"message" + (this.state.active ? "active": "")}>你好啊</div>
+                    <div className={["message", (this.state.active ? "active": "")].join("1")}>你好啊</div>
+                    <div style={{fontSize: "30px", color: "red", backgroundColor: "blue"}}>我是文本</div>
+                </div>
+            );
+        }
+    }
+
+    ReactDOM.render(<App />
+        , document.getElementsByClassName('app')[0]);
+</script>
+</html>
