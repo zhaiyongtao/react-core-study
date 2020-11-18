@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用es6语法Class创建组件</title>
+    <style>
+        table{
+            border: 1px solid #e9e9e9;
+        }
+        td, th {
+            border: 1px solid #e9e9e9;
+            padding: 8px 16px;
+        }
+        th {
+            background-color: #f7f7f7;
+            color: #5c6b77;
+        }
+        .count {
+            margin: 0 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="app"></div>
+</body>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+<script type="text/babel">
+
+    class App extends React.Component {
+
+        constructor() {
+            super();
+            this.state = {
+                books: [
+                    {
+                        id: 1,
+                        name: '《算法导论》',
+                        date: '2006-9',
+                        price: 85.00,
+                        count: 1
+                    },
+                    {
+                        id: 2,
+                        name: '《UNIX编程艺术》',
+                        date: '2006-2',
+                        price: 59.00,
+                        count: 1
+                    },
+                    {
+                        id: 3,
+                        name: '《编程珠玑》',
+                        date: '2008-10',
+                        price: 39.00,
+                        count: 1
+                    },
+                    {
+                        id: 4,
+                        name: '《代码大全》',
+                        date: '2006-3',
+                        price: 128.00,
+                        count: 1
+                    },
+                ]
+            }
+        }
+         formatPriceFn = (price) => {
+            if (typeof price !== 'number'){
+                price = Number(price) || 0;
+            }
+            return `￥${price.toFixed(2)}`
+         }
+
+         changeBoooksCount = (index, counter) => {
+            const books =[...this.state.books];
+            this.setState({
+                books: books.map((item, indey) => {
+                    if (indey === index) {
+                        item.count+=counter;
+                    }
+                    return item
+                })
+            })
+         }
+
+         removeBookFn = (index) => {
+            this.setState(
+                {
+                    books: this.state.books.filter((item, indey) => index !== indey)
+                }
+            )
+         }
+
+         sumPirce = () => {
+            let total = 0;
+            this.state.books.forEach( item => {
+                 total = item.price * item.count + total;
+            })
+             return this.formatPriceFn(total) ;
+         }
+
+        render() {
+            const {books} = this.state
+            return books.length?  (
+                <div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>书籍名称</th>
+                            <th>出版日期</th>
+                            <th>价格</th>
+                            <th>购买数量</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {
+                            this.state.books.map((item, index) => (
+                                <tr>
+                                    <td>{index + 1}</td>
+                                    <td>{item.name}</td>
+                                    <td>{item.date}</td>
+                                    <td>{this.formatPriceFn(item.price)}</td>
+                                    <td>
+                                        <button onClick={e => this.changeBoooksCount(index,-1)}>-</button>
+                                        <span className="count" >{item.count}</span>
+                                        <button onClick={e => this.changeBoooksCount(index,+1)}>+</button>
+                                    </td>
+                                    <td>
+                                        <button onClick={e => this.removeBookFn(index)}>移除</button>
+                                    </td>
+                                </tr>
+                             ))
+                        }
+                        </tbody>
+                    </table>
+                    <h2>{this.sumPirce()}</h2>
+                </div>
+            ) : (
+                <h2>购物车为空</h2>
+            );
+        }
+    }
+
+    ReactDOM.render(<App />
+        , document.getElementsByClassName('app')[0]);
+</script>
+</html>
