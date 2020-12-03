@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23bf4dbd-357a-432e-8975-2734d0256904" name="Default Changelist" comment="【add】 jsx 基础语法 部分代码">
+    <list default="true" id="23bf4dbd-357a-432e-8975-2734d0256904" name="Default Changelist" comment="【add】 jsx 增加练习代码">
+      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/.eslintcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,9 +38,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="XHTML File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -55,6 +63,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -102,7 +111,8 @@
       <workItem from="1605597460495" duration="3269000" />
       <workItem from="1605669689653" duration="55000" />
       <workItem from="1605669793618" duration="29000" />
-      <workItem from="1605680261051" duration="2763000" />
+      <workItem from="1605680261051" duration="3946000" />
+      <workItem from="1606977625685" duration="2233000" />
     </task>
     <task id="LOCAL-00001" summary="【add】 jsx 基础语法 部分代码">
       <created>1604313685735</created>
@@ -125,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605171819766</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="【add】 jsx 增加练习代码">
+      <created>1605684566215</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605684566215</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,121 +162,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="【add】 jsx 基础语法 部分代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="【add】 jsx 基础语法 部分代码" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1899" height="484" key="GridCell.Tab.0.bottom" timestamp="1605665607464">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.0.bottom/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607464" />
-    <state width="1899" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1200/0.-1057.1920.1057@0.0.1920.1200" timestamp="1604650955637" />
-    <state width="1899" height="484" key="GridCell.Tab.0.bottom/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961489" />
-    <state width="1899" height="344" key="GridCell.Tab.0.bottom/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605242463826" />
-    <state width="1899" height="484" key="GridCell.Tab.0.center" timestamp="1605665607462">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.0.center/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607462" />
-    <state width="1899" height="344" key="GridCell.Tab.0.center/0.0.1920.1200/0.-1057.1920.1057@0.0.1920.1200" timestamp="1604650955636" />
-    <state width="1899" height="484" key="GridCell.Tab.0.center/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961486" />
-    <state width="1899" height="344" key="GridCell.Tab.0.center/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605242463824" />
-    <state width="1899" height="484" key="GridCell.Tab.0.left" timestamp="1605665607461">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.0.left/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607461" />
-    <state width="1899" height="344" key="GridCell.Tab.0.left/0.0.1920.1200/0.-1057.1920.1057@0.0.1920.1200" timestamp="1604650955635" />
-    <state width="1899" height="484" key="GridCell.Tab.0.left/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961482" />
-    <state width="1899" height="344" key="GridCell.Tab.0.left/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605242463822" />
-    <state width="1899" height="484" key="GridCell.Tab.0.right" timestamp="1605665607462">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.0.right/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607462" />
-    <state width="1899" height="344" key="GridCell.Tab.0.right/0.0.1920.1200/0.-1057.1920.1057@0.0.1920.1200" timestamp="1604650955637" />
-    <state width="1899" height="484" key="GridCell.Tab.0.right/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961488" />
-    <state width="1899" height="344" key="GridCell.Tab.0.right/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605242463825" />
-    <state width="1899" height="484" key="GridCell.Tab.1.bottom" timestamp="1605665607466">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.1.bottom/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607466" />
-    <state width="1899" height="484" key="GridCell.Tab.1.bottom/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961319" />
-    <state width="1899" height="462" key="GridCell.Tab.1.bottom/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794018" />
-    <state width="1899" height="484" key="GridCell.Tab.1.center" timestamp="1605665607465">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.1.center/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607465" />
-    <state width="1899" height="484" key="GridCell.Tab.1.center/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961314" />
-    <state width="1899" height="462" key="GridCell.Tab.1.center/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794017" />
-    <state width="1899" height="484" key="GridCell.Tab.1.left" timestamp="1605665607464">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.1.left/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607464" />
-    <state width="1899" height="484" key="GridCell.Tab.1.left/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961310" />
-    <state width="1899" height="462" key="GridCell.Tab.1.left/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794017" />
-    <state width="1899" height="484" key="GridCell.Tab.1.right" timestamp="1605665607466">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.1.right/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607466" />
-    <state width="1899" height="484" key="GridCell.Tab.1.right/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961315" />
-    <state width="1899" height="462" key="GridCell.Tab.1.right/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794018" />
-    <state width="1899" height="484" key="GridCell.Tab.2.bottom" timestamp="1605665607468">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.2.bottom/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607468" />
-    <state width="1899" height="484" key="GridCell.Tab.2.bottom/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961329" />
-    <state width="1899" height="462" key="GridCell.Tab.2.bottom/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794020" />
-    <state width="1899" height="484" key="GridCell.Tab.2.center" timestamp="1605665607467">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.2.center/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607467" />
-    <state width="1899" height="484" key="GridCell.Tab.2.center/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961322" />
-    <state width="1899" height="462" key="GridCell.Tab.2.center/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794019" />
-    <state width="1899" height="484" key="GridCell.Tab.2.left" timestamp="1605665607467">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.2.left/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607467" />
-    <state width="1899" height="484" key="GridCell.Tab.2.left/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961321" />
-    <state width="1899" height="462" key="GridCell.Tab.2.left/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794018" />
-    <state width="1899" height="484" key="GridCell.Tab.2.right" timestamp="1605665607468">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1899" height="484" key="GridCell.Tab.2.right/0.0.1920.1200/0.-1055.1920.1055@0.0.1920.1200" timestamp="1605665607468" />
-    <state width="1899" height="484" key="GridCell.Tab.2.right/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1605600961326" />
-    <state width="1899" height="462" key="GridCell.Tab.2.right/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794019" />
-    <state width="1899" height="462" key="GridCell.Tab.3.bottom" timestamp="1605171794022">
-      <screen x="0" y="23" width="1920" height="1146" />
-    </state>
-    <state width="1899" height="462" key="GridCell.Tab.3.bottom/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1604655544454" />
-    <state width="1899" height="462" key="GridCell.Tab.3.bottom/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794022" />
-    <state width="1899" height="462" key="GridCell.Tab.3.center" timestamp="1605171794021">
-      <screen x="0" y="23" width="1920" height="1146" />
-    </state>
-    <state width="1899" height="462" key="GridCell.Tab.3.center/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1604655544452" />
-    <state width="1899" height="462" key="GridCell.Tab.3.center/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794021" />
-    <state width="1899" height="462" key="GridCell.Tab.3.left" timestamp="1605171794020">
-      <screen x="0" y="23" width="1920" height="1146" />
-    </state>
-    <state width="1899" height="462" key="GridCell.Tab.3.left/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1604655544452" />
-    <state width="1899" height="462" key="GridCell.Tab.3.left/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794020" />
-    <state width="1899" height="462" key="GridCell.Tab.3.right" timestamp="1605171794021">
-      <screen x="0" y="23" width="1920" height="1146" />
-    </state>
-    <state width="1899" height="462" key="GridCell.Tab.3.right/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1604655544453" />
-    <state width="1899" height="462" key="GridCell.Tab.3.right/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171794021" />
-    <state x="461" y="239" key="SettingsEditor" timestamp="1604368826539">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state x="461" y="239" key="SettingsEditor/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1604368826539" />
-    <state x="560" y="348" key="Vcs.Push.Dialog.v2" timestamp="1605171828660">
-      <screen x="0" y="23" width="1920" height="1146" />
-    </state>
-    <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1604368246056" />
-    <state x="560" y="348" key="Vcs.Push.Dialog.v2/0.23.1920.1146/0.-1057.1920.1057@0.23.1920.1146" timestamp="1605171828660" />
-    <state x="500" y="336" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604374233102">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state x="500" y="336" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1604374233102" />
-    <state x="660" y="355" width="600" height="490" key="find.popup" timestamp="1604389830436">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state x="660" y="355" width="600" height="490" key="find.popup/0.0.1920.1200/0.-1080.1920.1080@0.0.1920.1200" timestamp="1604389830436" />
+    <MESSAGE value="【add】 jsx 增加练习代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="【add】 jsx 增加练习代码" />
   </component>
 </project>
