@@ -20,20 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23bf4dbd-357a-432e-8975-2734d0256904" name="Default Changelist" comment="【add】 了解react脚手架">
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/config/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/config/getHttpsConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/config/jest/cssTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/config/jest/fileTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/config/modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/config/paths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/config/pnpTs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/config/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/config/webpackDevServer.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/scripts/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/scripts/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_know-about-react-cli/scripts/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_know-about-react-cli/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/04_know-about-react-cli/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +104,8 @@
       <workItem from="1605669689653" duration="55000" />
       <workItem from="1605669793618" duration="29000" />
       <workItem from="1605680261051" duration="3946000" />
-      <workItem from="1606977625685" duration="3627000" />
+      <workItem from="1606977625685" duration="4006000" />
+      <workItem from="1607583882971" duration="2065000" />
     </task>
     <task id="LOCAL-00001" summary="【add】 jsx 基础语法 部分代码">
       <created>1604313685735</created>
@@ -154,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606983698301</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="【add】 了解react脚手架">
+      <created>1606985792891</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606985792891</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
