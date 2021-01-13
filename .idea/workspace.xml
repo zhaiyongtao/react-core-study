@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23bf4dbd-357a-432e-8975-2734d0256904" name="Default Changelist" comment="[ADD]:子传父">
+    <list default="true" id="23bf4dbd-357a-432e-8975-2734d0256904" name="Default Changelist" comment="【add】: React系列六 - 父子组件通信">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/05_learn_component/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/05_learn_component/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_learn_component/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/05_learn_component/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_learn_component/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/05_learn_component/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_learn_component/src/pages/06_SonPassValueToParent/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/05_learn_component/src/pages/06_SonPassValueToParent/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_learn_component/src/pages/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/05_learn_component/src/pages/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -130,7 +128,7 @@
       <workItem from="1609742468002" duration="7560000" />
       <workItem from="1610003966591" duration="3580000" />
       <workItem from="1610417413838" duration="3936000" />
-      <workItem from="1610503032563" duration="6932000" />
+      <workItem from="1610503032563" duration="11356000" />
     </task>
     <task id="LOCAL-00001" summary="【add】 jsx 基础语法 部分代码">
       <created>1604313685735</created>
@@ -216,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610445896689</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="【add】: React系列六 - 父子组件通信">
+      <created>1610520223693</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610520223693</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +249,8 @@
     <MESSAGE value="【ADD】希尔排序" />
     <MESSAGE value="[ADD]: 增加div边框闪烁" />
     <MESSAGE value="[ADD]:子传父" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD]:子传父" />
+    <MESSAGE value="【add】: React系列六 - 父子组件通信" />
+    <option name="LAST_COMMIT_MESSAGE" value="【add】: React系列六 - 父子组件通信" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -256,5 +262,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
