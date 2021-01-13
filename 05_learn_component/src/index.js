@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ComponentsNest from './pages/FatherAndSonConnect/ComponentsNest'
-import ClassComponents from "./pages/FatherAndSonConnect/ClassComponents";
+import App from './pages/app'
 
 ReactDOM.render(
     <React.StrictMode>
-        <ComponentsNest/>
-        <ClassComponents />
+        <App />
     </React.StrictMode>,
     document.getElementById('root')
 );
