@@ -5,13 +5,18 @@ import React, {Component} from "react";
 // import SonPassValueToParent from "./06_SonPassValueToParent";
 // import LayoutPractice from "./06_SonPassValueToParent/LayoutPractice";
 // import ReactSlot from "./06_SonPassValueToParent/ReactSlot";
-import ReactContext from './07_ReactContex'
+// import ReactContext from './07_ReactContex'
+// import SetStateBase from "./08_SetStateMethod/SetStateBase";
+
+// import SynchronousSetState from "./08_SetStateMethod/SynchronousSetState";
+
+import PartRenderComponent from "./08_SetStateMethod/PartRenderComponent"
 
 class App extends Component {
     render() {
         return (
             <>
-                <ReactContext/>
+                <PartRenderComponent/>
             </>
         )
     }
