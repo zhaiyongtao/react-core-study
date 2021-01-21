@@ -10,13 +10,15 @@ import React, {Component} from "react";
 
 // import SynchronousSetState from "./08_SetStateMethod/SynchronousSetState";
 
-import PartRenderComponent from "./08_SetStateMethod/PartRenderComponent"
-
+// import PartRenderComponent from "./08_SetStateMethod/PartRenderComponent"
+// import NoChangedState from "./08_SetStateMethod/NoChangedState"
+// import HowToUseEvent from "./06_SonPassValueToParent/HowToUseEvent";
+import HowToUseRef from "./09_ControlledAndUnControlledComponent/HowToUseRef";
 class App extends Component {
     render() {
         return (
             <>
-                <PartRenderComponent/>
+                <HowToUseRef/>
             </>
         )
     }
