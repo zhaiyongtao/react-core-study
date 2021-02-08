@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-// import ComponentsNest from './FatherAndSonConnect/ComponentsNest'
-// import ClassComponents from "./FatherAndSonConnect/ClassComponents";
+// import ComponentsNest from './04_FatherAndSonConnect/ComponentsNest'
+// import ClassComponents from "./04_FatherAndSonConnect/ClassComponents";
 // import LifeCircle from "./05_lifeCricle";
 // import SonPassValueToParent from "./06_SonPassValueToParent";
 // import LayoutPractice from "./06_SonPassValueToParent/LayoutPractice";
@@ -13,12 +13,13 @@ import React, {Component} from "react";
 // import PartRenderComponent from "./08_SetStateMethod/PartRenderComponent"
 // import NoChangedState from "./08_SetStateMethod/NoChangedState"
 // import HowToUseEvent from "./06_SonPassValueToParent/HowToUseEvent";
-import HowToUseRef from "./09_ControlledAndUnControlledComponent/test";
+// import HowToUseRef from "./10_ReactLazy/main";
+import RefTypeDemo from "./09_ControlledAndUnControlledComponent/RefTypeDemo";
 class App extends Component {
     render() {
         return (
             <>
-                <HowToUseRef/>
+                <RefTypeDemo/>
             </>
         )
     }

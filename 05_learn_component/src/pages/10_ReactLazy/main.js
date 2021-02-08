@@ -5,7 +5,7 @@
  * @Date: 2021/1/27 5:53 下午
  * @LastEditTime: 2021/1/27 5:53 下午
  */
-import React, { Suspense } from 'react';
+import React,  { Suspense } from 'react';
 
 const OtherComponent = React.lazy(() => import('./view'));
 function MyComponent() {

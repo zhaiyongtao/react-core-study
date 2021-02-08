@@ -1,32 +1,13 @@
-/**
- * test$ - 描述
- * @Author: BuzzLightyear.Z
- * @Email: 501671900@qq.com
- * @Date: 2021/1/27 5:53 下午
- * @LastEditTime: 2021/1/27 5:53 下午
- */
-
-import React, {Component} from 'react';
-
-class Test extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            url: '',
-            component: null
-        }
+function foo (obj) {
+    with(obj) {
+        name = 'zyt'
     }
-    render() {
-        return (
-            <div>
-              请输入数据  <input onChange={(e) => this.changgeInout(e)} value={this.state.url} />
-            </div>
-        );
-    }
-
-    changgeInout = (e) => {
-        console.log(e.target)
-    }
+    console.log(obj)
 }
 
-export default Test;
+ var obj2 ={
+    height: 178.1
+}
+// foo(obj1)
+foo(obj2)
+console.log(name)

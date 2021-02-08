@@ -4,7 +4,7 @@ class View extends Component {
     render() {
         return (
             <div>
-                1123
+                React Lazy
             </div>
         );
     }
