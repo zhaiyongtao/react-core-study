@@ -14,12 +14,13 @@ import React, {Component} from "react";
 // import NoChangedState from "./08_SetStateMethod/NoChangedState"
 // import HowToUseEvent from "./06_SonPassValueToParent/HowToUseEvent";
 // import HowToUseRef from "./10_ReactLazy/main";
-import RefTypeDemo from "./09_ControlledAndUnControlledComponent/RefTypeDemo";
+import ControlledComponent from  './09_ControlledAndUnControlledComponent/ControlledComponent'
+// import RefTypeDemo from "./09_ControlledAndUnControlledComponent/RefTypeDemo";
 class App extends Component {
     render() {
         return (
             <>
-                <RefTypeDemo/>
+                <ControlledComponent/>
             </>
         )
     }
