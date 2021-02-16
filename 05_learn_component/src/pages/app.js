@@ -19,13 +19,15 @@ import React, {Component} from "react";
 // import HighCpnBaseUse from "./11_highComponent/HighCpnBaseUse";
 // import HighCpnProps from "./11_highComponent/HighCpnProps";
 // import HighCpnContext from "./11_highComponent/HighCpnContext";
-import HighCpnConditionReturn from "./11_highComponent/HighCpnConditionReturn";
-
+// import HighCpnConditionReturn from "./11_highComponent/HighCpnConditionReturn";
+// import HighCpnLifeCircle from "./11_highComponent/HighCpnLifeCircle";
+// import HighCpnForwardRef from "./11_highComponent/HighCpnForwardRef";
+import HighCpnPortals from "./11_highComponent/HighCpnPortals";
 class App extends Component {
     render() {
         return (
             <>
-                <HighCpnConditionReturn/>
+                <HighCpnPortals/>
             </>
         )
     }
