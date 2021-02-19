@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+// import "antd/dist/antd.css";
+// 因为要修改的是antd的less的样式所以这里需要引入less文件
+import 'antd/dist/antd.less';
 
 ReactDOM.render(
   <React.StrictMode>
