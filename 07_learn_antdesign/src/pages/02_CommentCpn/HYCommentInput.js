@@ -23,7 +23,7 @@ class HyCommentInput extends PureComponent {
     onSubmit = () =>{
         console.log(1)
         const commentInfo = {
-            id: Date.now(),
+            id: Date.now(), // 时间戳
             name: "zyt",
             avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
             content: <p>{this.state.value}</p>,
