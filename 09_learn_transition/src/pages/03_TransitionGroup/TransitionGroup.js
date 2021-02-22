@@ -17,6 +17,7 @@ class TransitionGroups extends PureComponent {
                     {
                         this.state.friends.map((item, index) => {
                             return (
+                                // key是必要的属性，不然渲染动作容易出现问题
                                 <CSSTransition classNames="friend" timeout={300} key={index}>
                                     <div>{item}</div>
                                 </CSSTransition>
