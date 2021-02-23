@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import storeContext from '../src/pages/04_HomeAndProfileContextConnect/context'
 import store from "./pages/04_HomeAndProfileContextConnect/store";
-import {Provider} from 'react-redux'
+
 ReactDOM.render(
-  <Provider store={store}>
+  <storeContext.Provider value={store}>
     <App />
-  </Provider>,
+  </storeContext.Provider>,
   document.getElementById('root')
 );
 
