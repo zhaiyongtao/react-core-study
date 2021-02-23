@@ -1,5 +1,5 @@
 /**
- * actions.js$ - Action集合
+ * actionCreators.js$ - Action集合
  * @Author: BuzzLightyear.Z
  * @Email: 501671900@qq.com
  * @Date: 2021/2/22 5:22 下午

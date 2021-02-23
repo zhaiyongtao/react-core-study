@@ -7,7 +7,7 @@
  */
 import React, {PureComponent} from 'react';
 // import store from "./store";
-import {addAction, changeBannersAction, changeRecommendsAction} from "./store/actions";
+import {addAction, changeBannersAction, changeRecommendsAction, getHomeMultidataAction} from "./store/actionCreators";
 import {connect} from 'react-redux'
 import axios from 'axios'
 
@@ -32,11 +32,7 @@ class Home extends PureComponent {
     // // }
 
     async componentDidMount() {
-       await axios.get('http://123.207.32.32:8000/home/multidata',{}).then((res) => {
-            const data = res.data.data;
-            this.props.changeBanners(data.banner.list);
-            this.props.changeRecommends(data.recommend.list)
-        })
+      this.props.getHomeMultidata()
     }
 
     render() {
@@ -77,6 +73,9 @@ const mapStateToProps = (dispatch) => ({
     },
     changeRecommends: (recommends) => {
         dispatch(changeRecommendsAction(recommends))
+    },
+    getHomeMultidata: () => {
+        dispatch(getHomeMultidataAction());
     }
 })
 

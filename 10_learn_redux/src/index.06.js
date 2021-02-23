@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import store from "./pages/07_HomeAndProfileReduxThunk/store";
+import store from "./pages/06_HomeAndProfileAsyncRequest/store";
 import {Provider} from 'react-redux'
 ReactDOM.render(
   <Provider store={store}>

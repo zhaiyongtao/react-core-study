@@ -6,7 +6,7 @@
  * @LastEditTime: 2021/2/23 2:03 下午
  */
 import React, {PureComponent} from 'react';
-import {subCounter} from "./store/actions";
+import {subCounter} from "./store/actionCreators";
 import {connect} from 'react-redux';
 
 class Profile extends PureComponent {
