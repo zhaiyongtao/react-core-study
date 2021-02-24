@@ -22,12 +22,13 @@ import React, {Component} from "react";
 // import HighCpnConditionReturn from "./11_highComponent/HighCpnConditionReturn";
 // import HighCpnLifeCircle from "./11_highComponent/HighCpnLifeCircle";
 // import HighCpnForwardRef from "./11_highComponent/HighCpnForwardRef";
-import HighCpnPortals from "./11_highComponent/HighCpnPortals";
+// import HighCpnPortals from "./11_highComponent/HighCpnPortals";
+import Test from "./10_ReactLazy/test";
 class App extends Component {
     render() {
         return (
             <>
-                <HighCpnPortals/>
+                <Test/>
             </>
         )
     }

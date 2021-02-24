@@ -1,0 +1,28 @@
+<HTML>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</HEAD>
+<BODY>
+<select onchange="alert('select onchange event');" id="select1">
+    <option>1</option>
+    <option>2</option>
+</select>
+<INPUT TYPE="button" value="按这" onclick="clickButton()">
+<script type="text/javascript">
+    function clickButton() {
+        alert("click button");
+        var t = document.getElementById('select1')
+        if (document.all) {
+            t.fireEvent("onchange");
+            alert("ie");
+        }
+        else {
+            var evt = document.createEvent('HTMLEvents');
+            evt.initEvent('change', true, true);
+            t.dispatchEvent(evt);
+        }
+    }
+</script>
+按button也会发出option的select事件
+</BODY>
+</HTML>
