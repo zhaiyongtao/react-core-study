@@ -1,6 +1,8 @@
 // import CounterExample from "./pages/01_CounterExample/CounterExample";
-import Home from "./pages/08_HomeAndProfileWithSaga/Home";
-import Profile from "./pages/08_HomeAndProfileWithSaga/Profile";
+// import Home from "./pages/08_HomeAndProfileWithSaga/Home";
+// import Profile from "./pages/08_HomeAndProfileWithSaga/Profile";
+import Home from "./pages/09_HomeAndProfileLog/Home";
+import Profile from "./pages/09_HomeAndProfileLog/Profile";
 
 function App() {
   return (

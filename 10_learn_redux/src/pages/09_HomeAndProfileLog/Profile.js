@@ -18,6 +18,8 @@ class Profile extends PureComponent {
   }
 
   componentDidMount() {
+    // this.next = store.dispatch;
+    // store.dispatch = this.dispatchAndLog;
     this.unSubscribe = store.subscribe(() => {
       this.setState({
         counter: store.getState().counter,
@@ -50,6 +52,14 @@ class Profile extends PureComponent {
   subCounter = (num) => {
     store.dispatch(subCounter(num));
   };
+
+  // 修改dispatch 方法
+
+  // dispatchAndLog = (action) => {
+  //   console.log("dispatching前", action.type);
+  //   this.next(action);
+  //   console.log("dispatching后", action.type);
+  // };
 }
 
 export default Profile;
