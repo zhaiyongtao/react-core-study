@@ -8,9 +8,7 @@
 
 import { createStore } from "redux";
 import reducer from "./reducer";
-import outputActionLog from "../utils/dispatchThunk";
 
 const store = createStore(reducer);
 
-outputActionLog(store);
 export default store;

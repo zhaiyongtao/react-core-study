@@ -18,7 +18,9 @@ class Home extends PureComponent {
     this.state = {
       counter: 0,
     };
+    // applyMiddWare的本质就是修改dispatch
     applyMiddleware(store, [dispatchAndLog, dispatchThunk]);
+    console.log(store);
   }
 
   componentDidMount() {
@@ -28,6 +30,7 @@ class Home extends PureComponent {
       });
     });
     // 校验dispatchThunk中间件
+    console.log(store.dispatch);
     store.dispatch(getData);
   }
 
@@ -47,6 +50,8 @@ class Home extends PureComponent {
   }
 
   increment = (num) => {
+    console.log("qwe", store);
+    debugger;
     store.dispatch(addAction(num));
   };
 
