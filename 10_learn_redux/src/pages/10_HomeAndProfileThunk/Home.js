@@ -51,7 +51,6 @@ class Home extends PureComponent {
 
   increment = (num) => {
     console.log("qwe", store);
-    debugger;
     store.dispatch(addAction(num));
   };
 
