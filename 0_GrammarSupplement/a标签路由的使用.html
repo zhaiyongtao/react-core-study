@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a标签路由的使用</title>
+</head>
+<body>
+<div class="app">
+    <!--    hash 路由一定要加上#-->
+    <!--    http://localhost:63342/react-core-study/0_GrammarSupplement/a%E6%A0%87%E7%AD%BE%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BD%BF%E7%94%A8.html?_ijt=nji6bvcl9g3rhr1vtcm91p3vi2#/home-->
+    <a href="#/home">首页</a>
+    <a href="#/about">关于</a>
+    <div class="router-view">
+    </div>
+</div>
+
+<script>
+    const routerViewEl = document.querySelector('.router-view');
+    // 2.监听hashchange
+    window.addEventListener("hashchange", () => {
+        switch(location.hash) {
+            case "#/home":
+                routerViewEl.innerHTML = "home";
+                break;
+            case "#/about":
+                routerViewEl.innerHTML = "about";
+                break;
+            default:
+                routerViewEl.innerHTML = "default";
+        }
+    })
+</script>
+</body>
+</html>
