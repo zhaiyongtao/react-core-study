@@ -8,27 +8,59 @@
 <div class="app">
     <!--    hash 路由一定要加上#-->
     <!--    http://localhost:63342/react-core-study/0_GrammarSupplement/a%E6%A0%87%E7%AD%BE%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BD%BF%E7%94%A8.html?_ijt=nji6bvcl9g3rhr1vtcm91p3vi2#/home-->
-    <a href="#/home">首页</a>
-    <a href="#/about">关于</a>
+<!--    <a href="#/home">首页</a>-->
+<!--    <a href="#/about">关于</a>-->
+    <a href="/home">首页</a>
+    <a href="/about">关于</a>
     <div class="router-view">
     </div>
 </div>
 
 <script>
     const routerViewEl = document.querySelector('.router-view');
+    // 会刷新整个页面
     // 2.监听hashchange
-    window.addEventListener("hashchange", () => {
-        switch(location.hash) {
-            case "#/home":
+    // window.addEventListener("hashchange", () => {
+    //     switch(location.hash) {
+    //         case "#/home":
+    //             routerViewEl.innerHTML = "home";
+    //             break;
+    //         case "#/about":
+    //             routerViewEl.innerHTML = "about";
+    //             break;
+    //         default:
+    //             routerViewEl.innerHTML = "default";
+    //     }
+    // })
+
+    window.addEventListener("popstate", historyChange);
+    window.addEventListener("go", historyChange);
+
+    const aEls = document.getElementsByTagName('a');
+    for (let aEl of aEls) {
+        aEl.addEventListener("click", (e) => {
+            e.preventDefault();
+            const href = aEl.getAttribute("href");
+            // pushState(data: any, title: string, url?: string | null): void; 跳转
+            history.pushState({}, "", href);
+            historyChange();
+        })
+    }
+
+    // 4.执行设置页面操作
+    function historyChange() {
+        switch(location.pathname) {
+            case "/home":
                 routerViewEl.innerHTML = "home";
                 break;
-            case "#/about":
+            case "/about":
                 routerViewEl.innerHTML = "about";
                 break;
             default:
                 routerViewEl.innerHTML = "default";
         }
-    })
+    }
+
 </script>
 </body>
 </html>
