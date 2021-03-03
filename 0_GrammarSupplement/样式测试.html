@@ -5,24 +5,41 @@
     <title>Title</title>
     <style>
         .father {
-            color: antiquewhite;
+            color: green;
         }
         /*中间有空格*/
-        .father .son {
+        .father .father-son {
             color: red;
+        }
+        .father.uncle {
+            font-size: 50px;
+        }
+        div.father{
+            font-weight: 500;
+        }
+        div.mother{
+            color: yellow;
+            font-weight: 500;
+        }
+        div .mother-son {
+            color: blue;
         }
     </style>
 </head>
 <body>
-<div class="father">
-<!--    red-->
-    <div class="son">
-        123
+<div class="father uncle apple">
+    <div class="father-son">
+        father son
     </div>
-<!--    antiquewhite-->
-    <div class="brother">
-        456
+    <div class="son-brother">
+        son-brother
     </div>
+</div>
+<div class="mother">
+    mother
+    <span class="mother-son">
+        mother son
+    </span>
 </div>
 </body>
 </html>
