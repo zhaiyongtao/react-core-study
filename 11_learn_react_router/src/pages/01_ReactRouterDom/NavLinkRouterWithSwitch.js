@@ -7,13 +7,15 @@
  */
 
 import React, { PureComponent } from "react";
-import { BrowserRouter, NavLink, Route } from "react-router-dom";
+import { BrowserRouter, NavLink, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import ProFile from "./components/ProFile";
+import User from "./components/User";
 import "./NavLinkRouter.css";
+import NoMatch from "./components/NoMatch";
 
-class NavLinkRouter extends PureComponent {
+class NavLinkRouterWithSwitch extends PureComponent {
   render() {
     return (
       <BrowserRouter>
@@ -24,12 +26,20 @@ class NavLinkRouter extends PureComponent {
           About
         </NavLink>
         <NavLink to="/profile">Profile</NavLink>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/profile" component={ProFile} />
+
+        <Switch>
+          {/*Home NoMatch*/}
+          <Route path="/" exact component={Home} />
+          {/*About User NoMatch*/}
+          <Route path="/about" component={About} />
+          {/*ProFile User NoMatch*/}
+          <Route path="/profile" component={ProFile} />
+          <Route path="/:userId" component={User} />
+          <Route component={NoMatch} />
+        </Switch>
       </BrowserRouter>
     );
   }
 }
 
-export default NavLinkRouter;
+export default NavLinkRouterWithSwitch;
