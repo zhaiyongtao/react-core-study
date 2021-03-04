@@ -26,7 +26,7 @@ class NavLinkRouterWithSwitch extends PureComponent {
           About
         </NavLink>
         <NavLink to="/profile">Profile</NavLink>
-
+        {/*<Switch>是唯一的因为它仅仅只会渲染一个路径。相比之下（不使用<Switch>包裹的情况下），每一个被location匹配到的<Route>将都会被渲染*/}
         <Switch>
           {/*Home NoMatch*/}
           <Route path="/" exact component={Home} />
