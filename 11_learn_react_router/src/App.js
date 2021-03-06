@@ -1,6 +1,7 @@
 import "./App.css";
 // import StateAndSearchParamsRouter from "./pages/05_ParamsRouter/StateAndSearchParamsRouter";
-import NavlinkObjectParamsRouter from "./pages/05_ParamsRouter/NavlinkObjectParamsRouter";
+// import NavlinkObjectParamsRouter from "./pages/05_ParamsRouter/NavlinkObjectParamsRouter";
+import RouterConfigRender from "./pages/06_RouterConfigRender/RouterConfigRender";
 // import LinkRouter from "./pages/01_ReactRouterDom/LinkRouter";
 // import NavLinkRouter from "./pages/01_ReactRouterDom/NavLinkRouter";
 // import NavLinkRouterNoSwitch from "./pages/01_ReactRouterDom/NavLinkRouterNoSwitch";
@@ -18,7 +19,8 @@ function App() {
       {/*<NestedRouter />*/}
       {/*<HistoryRouter />*/}
       {/*<MatchParamsRouter />*/}
-      <NavlinkObjectParamsRouter />
+      {/*<NavlinkObjectParamsRouter />*/}
+      <RouterConfigRender />
     </div>
   );
 }
