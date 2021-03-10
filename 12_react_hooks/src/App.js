@@ -8,6 +8,7 @@
 // import ClearEffectCpn from "./pages/02_EffectHooks/ClearEffectCpn";
 import React, { useState } from "react";
 import ContextHook from "./pages/02_EffectHooks/ContextHook/ContextHook";
+import CallbackHook from "./pages/03_CallbackHook/CallbackHook";
 
 function App() {
   const [isShow, setIsShow] = useState(true);
@@ -21,8 +22,9 @@ function App() {
       {/*<ClassCounter />*/}
       {/*<EffectCounter />*/}
       {/*{isShow && <ClearEffectCpn />}*/}
-      <ContextHook />
+      {/*<ContextHook />*/}
       {/*<button onClick={() => setIsShow(!isShow)}>隐藏dom元素</button>*/}
+      <CallbackHook />
     </div>
   );
 }
