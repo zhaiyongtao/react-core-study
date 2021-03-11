@@ -6,12 +6,15 @@
 // import ClassCounter from "./pages/02_EffectHooks/classCounter";
 // import EffectCounter from "./pages/02_EffectHooks/EffectCounter";
 // import ClearEffectCpn from "./pages/02_EffectHooks/ClearEffectCpn";
-import React, { useState } from "react";
-import ContextHook from "./pages/02_EffectHooks/ContextHook/ContextHook";
-import CallbackHook from "./pages/03_CallbackHook/CallbackHook";
+import React from "react";
+import UseMemoHookInChildrenCpn from "./pages/04_MemoHook/UseMemoHookInChildrenCpn";
+// import React, { useState } from "react";
+// import ContextHook from "./pages/02_EffectHooks/ContextHook/ContextHook";
+// import CallbackHook from "./pages/03_CallbackHook/CallbackHook";
+// import MemoHook from "./pages/04_MemoHook/MemoHook";
 
 function App() {
-  const [isShow, setIsShow] = useState(true);
+  // const [isShow, setIsShow] = useState(true);
   return (
     <div className="App">
       {/*01*/}
@@ -24,7 +27,9 @@ function App() {
       {/*{isShow && <ClearEffectCpn />}*/}
       {/*<ContextHook />*/}
       {/*<button onClick={() => setIsShow(!isShow)}>隐藏dom元素</button>*/}
-      <CallbackHook />
+      {/*<CallbackHook />*/}
+      {/*<MemoHook />*/}
+      <UseMemoHookInChildrenCpn/>
     </div>
   );
 }
