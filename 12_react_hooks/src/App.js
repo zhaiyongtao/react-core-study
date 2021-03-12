@@ -10,7 +10,7 @@ import React from "react";
 import UseMemoHookInChildrenCpn from "./pages/04_MemoHook/UseMemoHookInChildrenCpn";
 // import React, { useState } from "react";
 // import ContextHook from "./pages/02_EffectHooks/ContextHook/ContextHook";
-// import CallbackHook from "./pages/03_CallbackHook/CallbackHook";
+// import CallbackHook from "./pages/05_CallbackHook/CallbackHook";
 // import MemoHook from "./pages/04_MemoHook/MemoHook";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
       {/*<button onClick={() => setIsShow(!isShow)}>隐藏dom元素</button>*/}
       {/*<CallbackHook />*/}
       {/*<MemoHook />*/}
-      <UseMemoHookInChildrenCpn/>
+      <UseMemoHookInChildrenCpn />
     </div>
   );
 }
