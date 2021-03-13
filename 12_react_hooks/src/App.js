@@ -7,7 +7,9 @@
 // import EffectCounter from "./pages/02_EffectHooks/EffectCounter";
 // import ClearEffectCpn from "./pages/02_EffectHooks/ClearEffectCpn";
 import React from "react";
-import UseMemoHookInChildrenCpn from "./pages/04_MemoHook/UseMemoHookInChildrenCpn";
+// import RefHookForDomOrClass from "./pages/06_RefHook/RefHookForDomOrClass";
+import UseRefToSaveSomeValue from "./pages/06_RefHook/UseRefToSaveSomeValue";
+// import UseMemoHookInChildrenCpn from "./pages/04_MemoHook/UseMemoHookInChildrenCpn";
 // import React, { useState } from "react";
 // import ContextHook from "./pages/02_EffectHooks/ContextHook/ContextHook";
 // import CallbackHook from "./pages/05_CallbackHook/CallbackHook";
@@ -29,7 +31,9 @@ function App() {
       {/*<button onClick={() => setIsShow(!isShow)}>隐藏dom元素</button>*/}
       {/*<CallbackHook />*/}
       {/*<MemoHook />*/}
-      <UseMemoHookInChildrenCpn />
+      {/*<UseMemoHookInChildrenCpn />*/}
+      {/*<RefHookForDomOrClass />*/}
+      <UseRefToSaveSomeValue />
     </div>
   );
 }
