@@ -8,11 +8,11 @@
 // import ClearEffectCpn from "./pages/02_EffectHooks/ClearEffectCpn";
 import React from "react";
 // import RefHookForDomOrClass from "./pages/06_RefHook/RefHookForDomOrClass";
-// import UseRefToSaveSomeValue from "./pages/06_RefHook/UseRefToSaveSomeValue";
+import UseRefToSaveForwardValue from "./pages/06_RefHook/UseRefToSaveForwardValue";
 // import CommonForwardRefAndUseRef from "./pages/07_UseImperativeHandleHook/CommonForwardRefAndUseRef";
 // import UseImperativeHandleHook from "./pages/07_UseImperativeHandleHook/UseImperativeHandleHook";
 // import CommonUseEffect from "./pages/08_UseLayoutEffectHook/CommonUseEffect";
-import UseLayoutEffectHook from "./pages/08_UseLayoutEffectHook/UseLayoutEffectHook";
+// import UseLayoutEffectHook from "./pages/08_UseLayoutEffectHook/UseLayoutEffectHook";
 // import UseMemoHookInChildrenCpn from "./pages/04_MemoHook/UseMemoHookInChildrenCpn";
 // import React, { useState } from "react";
 // import ContextHook from "./pages/02_EffectHooks/ContextHook/ContextHook";
@@ -37,11 +37,11 @@ function App() {
             {/*<MemoHook />*/}
             {/*<UseMemoHookInChildrenCpn />*/}
             {/*<RefHookForDomOrClass />*/}
-            {/*<UseRefToSaveSomeValue />*/}
+            <UseRefToSaveForwardValue />
             {/*  <CommonForwardRefAndUseRef />*/}
             {/*<UseImperativeHandleHook/>*/}
             {/*<CommonUseEffect />*/}
-            <UseLayoutEffectHook />
+            {/*<UseLayoutEffectHook />*/}
         </div>
     );
 }
