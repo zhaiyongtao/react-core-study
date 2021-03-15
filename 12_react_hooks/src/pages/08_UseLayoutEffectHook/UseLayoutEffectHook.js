@@ -5,7 +5,7 @@ import React, {useState,useLayoutEffect} from 'react';
  * useLayoutEffect会在渲染的内容更新到DOM上之前执行，会阻塞DOM的更新； setCount => 重新渲染 => useLayoutEffect => DOM更新
  */
 function UseLayoutEffectHook(props) {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(10);
     useLayoutEffect(() =>{
         if (count === 0) {
             setCount(Math.random() * 200)

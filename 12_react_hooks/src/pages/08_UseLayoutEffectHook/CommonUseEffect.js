@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 function CommonUseEffect(props) {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(10);
     useEffect(() =>{
         if (count === 0) {
             setCount(Math.random() * 200)

@@ -12,7 +12,7 @@ const InputCpn = forwardRef((props, ref) => {
               console.log("hello")
             }
         }
-    })
+    }, [inputRef.current])
 
     return (
         <div>
