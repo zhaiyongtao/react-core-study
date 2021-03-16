@@ -9,6 +9,7 @@
 import React from "react";
 // import RefHookForDomOrClass from "./pages/06_RefHook/RefHookForDomOrClass";
 import UseRefToSaveForwardValue from "./pages/06_RefHook/UseRefToSaveForwardValue";
+import LogCpnCreateAndDestroy from "./pages/09_CustomHookCpn/LogCpnCreateAndDestroy";
 // import CommonForwardRefAndUseRef from "./pages/07_UseImperativeHandleHook/CommonForwardRefAndUseRef";
 // import UseImperativeHandleHook from "./pages/07_UseImperativeHandleHook/UseImperativeHandleHook";
 // import CommonUseEffect from "./pages/08_UseLayoutEffectHook/CommonUseEffect";
@@ -37,11 +38,12 @@ function App() {
             {/*<MemoHook />*/}
             {/*<UseMemoHookInChildrenCpn />*/}
             {/*<RefHookForDomOrClass />*/}
-            <UseRefToSaveForwardValue />
+            {/*<UseRefToSaveForwardValue />*/}
             {/*  <CommonForwardRefAndUseRef />*/}
             {/*<UseImperativeHandleHook/>*/}
             {/*<CommonUseEffect />*/}
             {/*<UseLayoutEffectHook />*/}
+            <LogCpnCreateAndDestroy />
         </div>
     );
 }
