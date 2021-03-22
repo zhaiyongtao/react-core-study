@@ -8,9 +8,11 @@
 // import ClearEffectCpn from "./pages/02_EffectHooks/ClearEffectCpn";
 import React from "react";
 // import RefHookForDomOrClass from "./pages/06_RefHook/RefHookForDomOrClass";
-import UseRefToSaveForwardValue from "./pages/06_RefHook/UseRefToSaveForwardValue";
-import LogCpnCreateAndDestroy from "./pages/09_CustomHookCpn/LogCpnCreateAndDestroy";
-import UserAndTokenContextHook from "./pages/09_CustomHookCpn/UserAndTokenContextHook";
+// import UseRefToSaveForwardValue from "./pages/06_RefHook/UseRefToSaveForwardValue";
+// import LogCpnCreateAndDestroy from "./pages/09_CustomHookCpn/LogCpnCreateAndDestroy";
+// import UserAndTokenContextHook from "./pages/09_CustomHookCpn/UserAndTokenContextHook";
+// import CustomScrollPositionHook from "./pages/09_CustomHookCpn/CustomScrollPositionHook/CustomScrollPositionHook";
+import LocalStorageHookCpn from "./pages/09_CustomHookCpn/LocalStorageHook/LocalStorageHookCpn";
 // import CommonForwardRefAndUseRef from "./pages/07_UseImperativeHandleHook/CommonForwardRefAndUseRef";
 // import UseImperativeHandleHook from "./pages/07_UseImperativeHandleHook/UseImperativeHandleHook";
 // import CommonUseEffect from "./pages/08_UseLayoutEffectHook/CommonUseEffect";
@@ -22,32 +24,34 @@ import UserAndTokenContextHook from "./pages/09_CustomHookCpn/UserAndTokenContex
 // import MemoHook from "./pages/04_MemoHook/MemoHook";
 
 function App() {
-    // const [isShow, setIsShow] = useState(true);
-    return (
-        <div className="App">
-            {/*01*/}
-            {/*<ClassCounter />*/}
-            {/*<HooksCounter />*/}
-            {/*<ComplexDataHooks />*/}
-            {/*o2*/}
-            {/*<ClassCounter />*/}
-            {/*<EffectCounter />*/}
-            {/*{isShow && <ClearEffectCpn />}*/}
-            {/*<ContextHook />*/}
-            {/*<button onClick={() => setIsShow(!isShow)}>隐藏dom元素</button>*/}
-            {/*<CallbackHook />*/}
-            {/*<MemoHook />*/}
-            {/*<UseMemoHookInChildrenCpn />*/}
-            {/*<RefHookForDomOrClass />*/}
-            {/*<UseRefToSaveForwardValue />*/}
-            {/*  <CommonForwardRefAndUseRef />*/}
-            {/*<UseImperativeHandleHook/>*/}
-            {/*<CommonUseEffect />*/}
-            {/*<UseLayoutEffectHook />*/}
-            {/*<LogCpnCreateAndDestroy />*/}
-            <UserAndTokenContextHook />
-        </div>
-    );
+  // const [isShow, setIsShow] = useState(true);
+  return (
+    <div className="App">
+      {/*01*/}
+      {/*<ClassCounter />*/}
+      {/*<HooksCounter />*/}
+      {/*<ComplexDataHooks />*/}
+      {/*o2*/}
+      {/*<ClassCounter />*/}
+      {/*<EffectCounter />*/}
+      {/*{isShow && <ClearEffectCpn />}*/}
+      {/*<ContextHook />*/}
+      {/*<button onClick={() => setIsShow(!isShow)}>隐藏dom元素</button>*/}
+      {/*<CallbackHook />*/}
+      {/*<MemoHook />*/}
+      {/*<UseMemoHookInChildrenCpn />*/}
+      {/*<RefHookForDomOrClass />*/}
+      {/*<UseRefToSaveForwardValue />*/}
+      {/*  <CommonForwardRefAndUseRef />*/}
+      {/*<UseImperativeHandleHook/>*/}
+      {/*<CommonUseEffect />*/}
+      {/*<UseLayoutEffectHook />*/}
+      {/*<LogCpnCreateAndDestroy />*/}
+      {/*<UserAndTokenContextHook />*/}
+      {/*<CustomScrollPositionHook />*/}
+      <LocalStorageHookCpn />
+    </div>
+  );
 }
 
 export default App;
