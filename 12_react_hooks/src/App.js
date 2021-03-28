@@ -13,6 +13,7 @@ import React from "react";
 // import UserAndTokenContextHook from "./pages/09_CustomHookCpn/UserAndTokenContextHook";
 // import CustomScrollPositionHook from "./pages/09_CustomHookCpn/CustomScrollPositionHook/CustomScrollPositionHook";
 import LocalStorageHookCpn from "./pages/09_CustomHookCpn/LocalStorageHook/LocalStorageHookCpn";
+import Link from "./pages/06_RefHook/Link";
 // import CommonForwardRefAndUseRef from "./pages/07_UseImperativeHandleHook/CommonForwardRefAndUseRef";
 // import UseImperativeHandleHook from "./pages/07_UseImperativeHandleHook/UseImperativeHandleHook";
 // import CommonUseEffect from "./pages/08_UseLayoutEffectHook/CommonUseEffect";
@@ -49,7 +50,8 @@ function App() {
       {/*<LogCpnCreateAndDestroy />*/}
       {/*<UserAndTokenContextHook />*/}
       {/*<CustomScrollPositionHook />*/}
-      <LocalStorageHookCpn />
+      {/*<LocalStorageHookCpn />*/}
+      <Link />
     </div>
   );
 }
