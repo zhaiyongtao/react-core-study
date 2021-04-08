@@ -9,5 +9,5 @@
 import React, { memo } from "react";
 
 export default memo(function AppFooter() {
-  return <div>底部组件</div>;
+    return <div>底部组件</div>;
 });
