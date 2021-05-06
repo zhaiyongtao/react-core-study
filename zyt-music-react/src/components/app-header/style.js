@@ -1,13 +1,9 @@
 import styled from "styled-components";
 
 export const AppHeaderWrapper = styled.div`
-  position: relative;
-  z-index: 1000;
   height: 75px;
-  box-sizing: border-box;
-  background: #242424;
-  border-bottom: 1px solid #000;
-  width: 100%;
+  background-color: #242424;
+  font-size: 14px;
   .content {
     display: flex;
     justify-content: space-between;
@@ -38,6 +34,36 @@ export const HeaderLeft = styled.div`
         display: block;
         padding: 0 20px;
         color: #ccc;
+      }
+      :last-of-type a {
+        position: relative;
+        ::after {
+          position: absolute;
+          content: '123';
+          width: 28px;
+          height: 19px;
+          background-image: url(../../assets/img/sprite_01.png);
+          background-position: -190px 0;
+          top: 20px;
+          right: -15px;
+        }
+      }
+
+      &:hover a, .active {
+        color: #fff;
+        background: #000;
+        text-decoration: none;
+      }
+
+      .active .icon {
+        position: absolute;
+        display: inline-block;
+        width: 12px;
+        height: 7px;
+        bottom: -1px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-position: -226px 0;
       }
 
     }

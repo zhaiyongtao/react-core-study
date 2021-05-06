@@ -8,7 +8,7 @@
 import React, {memo} from "react";
 import {NavLink} from "react-router-dom";
 import classnames from "classnames";
-import {headerLinks} from "../../services/loacal-data";
+import {headerLinks} from  "@/services/local-data"
 import {AppHeaderWrapper, HeaderLeft, HeaderRight} from './style'
 
 export default memo(function AppHeader() {
@@ -16,7 +16,7 @@ export default memo(function AppHeader() {
     const showItem = (item, index) => {
         if (index < 3) {
             return (
-                <NavLink to={item.link}>{item.title} <i className="sprite_01 icon" /></NavLink>
+                <NavLink to={item.link} exact>{item.title} <i className="sprite_01 icon" /></NavLink>
             )
         } else {
             return <a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
